@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--  สีหัวข้อ -->
+    <style>
+       h1, h2, h3, h4, h5, h6 {
+    color: #5d7bdb;
+}
+
+/* พื้นหลัง */
+body {
+    background: linear-gradient(to right, 
+        #fbcfe8, /* สีชมพูพาสเทล */
+        #c7d2fe, /* สีน้ำเงินอ่อนพาสเทล */
+        #d1fae5, /* สีเขียวมิ้นต์พาสเทล */
+        #fef9c3, /* สีเหลืองพาสเทล */
+        #fca5a5, /* สีแดงอ่อนพาสเทล */
+        #cbd5e1  /* สีเทาอ่อนพาสเทล */
+    );
+    background-size: cover; 
+    background-attachment: fixed; 
+    color: #575555; 
+    font-family: Arial, sans-serif; 
+}
+     </style>
+    
+ <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">แฟชั่นตะวันตกยุคกลาง</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#intro">บทนำ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fashion">สไตส์อันเป็นเอกลักษณ์</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#video">วิดีโอ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- เนื้อหาหลัก -->
+    <div class="container mt-5" id="intro">
+        <h1>แฟชั่นตะวันตกยุคกลาง</h1>
+        <p>
+            แฟชั่นในยุคกลางมักสะท้อนถึงสถานะทางสังคมและบทบาทในชีวิตประจำวัน การแต่งกายของชนชั้นสูงเน้นความหรูหราและสีสันที่สดใส ขณะที่ชนชั้นล่างจะมีชุดที่เรียบง่ายและใช้วัสดุธรรมดา ส่วนทหารและอัศวินจะเน้นการป้องกันตัวด้วยเกราะ ในขณะที่การแต่งกายของศาสนจักรจะเรียบง่ายและเคร่งขรึม
+        </p>
+    </div>
+
+    <!-- แฟชั่นในยุคกลาง -->
+    <div class="container mt-5" id="fashion">
+        <h2>สไตส์อันเป็นเอกลักษณ์</h2>
+        <p>
+            แฟชั่นในยุคกลางตะวันตกมีลักษณะเอกลักษณ์ที่สะท้อนถึงสถานะและบทบาททางสังคม สไตล์เน้นความซับซ้อนของการแต่งกายผ่านชุดหลายชั้น, การใช้วัสดุหรูหรา และเครื่องประดับที่แสดงสถานะ เช่น สีสันที่หายาก, หมวก, และผ้าคลุมศีรษะ
+        </p>
+        <div class="d-flex flex-wrap justify-content-start">
+            <!-- Card 1 -->
+            <style>
+                .image-row {
+                    display: flex;
+                    justify-content: center; /* หรือ space-around / center / flex-start / flex-end */
+                    gap: 60px; /* ระยะห่างระหว่างรูปภาพ */
+                }
+                .image-row img {
+                    max-width: 500px; /* กำหนดขนาดของรูปภาพ */
+                    height: 300px;
+                }
+            </style>
+            </head>
+            <body>
+                <div class="image-row">
+                    <img src="1.jpg" alt="Image 1">
+                    <img src="2.jpg" alt="Image 2">
+                    <img src="3.jpg" alt="Image 3">
+                </div>
+
+    <!-- วิดีโอจาก YouTube -->
+    <div class="container mt-5" id="video">
+        <h2>4สตรีทรงอิทธิพลในยุคกลาง</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z_XFT8RBVB0?si=Qqig3UFBzxD-bPsm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ภาพรวมแฟชั่นตะวันตกยุคกลาง</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    แฟชั่นตะวันตกในยุคกลาง (ประมาณศตวรรษที่ 5–15) มีลักษณะที่แตกต่างกันตามชนชั้นและบทบาทในสังคม โดยเฉพาะการแต่งกายที่สะท้อนถึงสถานะทางสังคมและการใช้ชีวิตประจำวันในช่วงนั้น:
+
+1. ชนชั้นสูง (Nobility)
+เสื้อผ้า: ชุดหรูหราทำจากผ้าแพง เช่น ผ้าไหมและขนสัตว์คุณภาพสูง
+รูปแบบ: เสื้อคลุมยาว กระโปรงและชุดทับสำหรับผู้หญิง, เสื้อคลุมหรือเสื้อชั้นในแบบหลายชั้นสำหรับผู้ชาย
+สี: สีสดใสและหรูหรา เช่น ม่วง, แดง, ฟ้า ซึ่งสื่อถึงความร่ำรวย
+เครื่องประดับ: สวมเครื่องประดับหรูหรา เช่น มงกุฎ, แหวน, สร้อยคอ และเข็มขัดที่มีอัญมณี
+2. ชนชั้นกลาง (Middle Class)
+เสื้อผ้า: ชุดที่สะดวกสบายและง่ายต่อการทำงาน, ทำจากผ้าฝ้ายหรือขนสัตว์ธรรมดา
+สี: สีน้ำเงิน, เขียว, และเทา
+รูปแบบ: เสื้อเชิ้ตหรือเสื้อคลุมยาวสำหรับผู้ชาย, กระโปรงและผ้าคลุมศีรษะสำหรับผู้หญิง
+3. ชนชั้นล่าง (Peasants)
+เสื้อผ้า: ชุดเรียบง่าย ทำจากผ้าธรรมดา เช่น ผ้าลินินหรือผ้าฝ้าย
+รูปแบบ: เสื้อแขนยาว, กางเกงหรือกระโปรงยาวสำหรับผู้หญิง, และรองเท้าผ้าหรือรองเท้าไม้
+สี: สีที่ได้จากธรรมชาติ เช่น น้ำตาล, เทา หรือสีหม่น
+4. ทหารและอัศวิน
+เสื้อผ้า: ชุดเกราะโลหะ, หมวกเกราะ, เสื้อคลุมที่มีสัญลักษณ์ประจำตระกูลหรือการต่อสู้
+เครื่องประดับ: อาวุธและอุปกรณ์ต่อสู้ที่เป็นส่วนหนึ่งของชุด
+5. ศาสนจักร
+เสื้อผ้า: ชุดของพระสงฆ์หรือนักบวชที่เน้นความเรียบง่าย เช่น เสื้อคลุมยาวสีดำหรือขาว
+รูปแบบ: ชุดที่สะท้อนความสงบและเคร่งขรึม
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                    <button type="button" class="btn btn-primary">ตกลง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button  -->
+    <div class="container mt-5">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+            ดูข้อมูลเพิ่มเติม
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>นางสาวกมลวรรณ หนูอินทร เลขที่ 38</p>
+    </footer>
+
+    <!-- ลิงค์ไปยัง Bootstrap JS และ jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
